@@ -25,5 +25,5 @@ containers:
     name: alpha
     grpcPort: 9080
     httpPort: 8080
-    image: registry.registry.alexstorm.solenopsys.org/solenopsys-ds-dgraph # dgraph/standalone:v20.11.2
+    image: registry.alexstorm.solenopsys.org/solenopsys-ds-dgraph # dgraph/standalone:v20.11.2
     pullPolicy: IfNotPresent

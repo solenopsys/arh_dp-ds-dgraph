@@ -24,7 +24,7 @@ spec:
             - containerPort: {{ .Values.containers.dgraph_zero.httpPort }}
               name: http-zero
           volumeMounts:
-            - name: datadir
+            - name: {{ .Values.storage.volumeName }}
               mountPath: /dgraph
           command:
             - bash
@@ -41,7 +41,7 @@ spec:
             - containerPort: {{ .Values.containers.dgraph_alpha.grpcPort }}
               name: grpc-alpha
           volumeMounts:
-            - name: datadir
+            - name: {{ .Values.storage.volumeName }}
               mountPath: /dgraph
           env:
             - name: POD_NAMESPACE
