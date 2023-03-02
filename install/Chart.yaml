@@ -3,6 +3,4 @@ name: solenopsys-ds-dgraph
 version: 0.1.3
 description: Dgraph data service
 icon: "http://alexstorm.solenopsys.org/apps/assets/solenopsys-ds-dgraph.svg"
-
-
-
+appVersion: 1.0.0
