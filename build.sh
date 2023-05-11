@@ -1,7 +1,7 @@
 #!/bin/sh
 
 build_push(){
-  docker buildx build  --platform ${ARCHS} -f dgraph.Dockerfile -t ${REGISTRY}/${NAME}:latest  --output=type=registry,registry.insecure=true --push .
+  nerdctl build --platform=${ARCHS} --output type=image,name=${REGISTRY}/${NAME}:latest,push=true .
 }
 
 helm_build_push(){
