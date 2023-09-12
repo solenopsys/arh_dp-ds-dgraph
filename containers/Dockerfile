@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM  golang:buster as builder
+FROM --platform=$BUILDPLATFORM  golang:buster:1.21.0 as builder
 
 ARG TARGETARCH
 
